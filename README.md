@@ -38,6 +38,8 @@ cp .env.sample .env
 
 # run local dev server
 npm start
+
+npm run compile
 ```
 
 ### Test source server

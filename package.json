@@ -32,7 +32,8 @@
     "watch": "cd deploy && ../node_modules/.bin/sls logs -f app -t",
     "lint": "./node_modules/.bin/standard",
     "jest": "./node_modules/.bin/jest",
-    "test": "npm run jest"
+    "test": "npm run jest",
+    "create-msg": "node -r @babel/register -r dotenv-override-true/config create-msg.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -53,6 +54,7 @@
     "body-parser": "1.19.0",
     "commander": "^2.20.0",
     "dotenv": "6.2.0",
+    "dotenv-override-true": "^6.2.2",
     "download": "^7.1.0",
     "express": "^4.16.4",
     "json-deep-copy": "^1.1.1",
